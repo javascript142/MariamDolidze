@@ -1,0 +1,197 @@
+.navigacion{
+    display: flex;
+    cursor: pointer;
+    margin-left: 60%;
+    font-size: 50px;
+    margin-top: 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.navigacion a{
+    color: #f9f3f3;
+    position: relative;
+    margin: 10px;
+    font-size:24px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navigacion a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #c26767;
+    border-radius: 7px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+.navigacion a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.burger-menu .toggle-button {
+    display: block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .burger-menu .bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .burger-menu .menu-list {
+    display: none;
+    list-style: none;
+  }
+  
+  .burger-menu input[type="checkbox"]:checked ~ .menu-list {
+    display: block;
+  }
+  
+  .burger-menu input[type="checkbox"]:checked ~ .toggle-button .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 4px);
+  }
+  
+  .burger-menu input[type="checkbox"]:checked ~ .toggle-button .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu input[type="checkbox"]:checked ~ .toggle-button .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -4px);
+  }
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/download.jpg);
+}
+.container{
+    width: 100%;
+    height: 100px; 
+    /* background-image: url(/future-technology.jpg); */
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+
+}
+.form-box{
+    width: 90%;
+    max-width: 430px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    /* background: #fff; */
+    padding: 30px 40px 50px;
+    border:  2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px ;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px ;
+    transition: max-height 0.5s;
+    overflow:  hidden;
+    
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.btn-field button{
+    flex-basis: 48% ;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.input-group{
+    height: 180px ;
+}
+.btn-field button :hover{
+    background: #eaeaea;
+    color: #555;
+}
+.container1{
+    position: relative;
+    padding: 30px;
+      background-color: rgb(26, 35, 108);
+      display: flex;
+      margin-top: 50%;
+      font-size: 17px;
+    }
+    .container2{
+        max-width: 30%;
+        color: #fff;
+    }
+    .container3{
+      margin-left: 50px;
+      color: #fff;
+    }
+    .container4{
+      margin-left: 50px;
+      color: #fff;
+    }
+    .container5{
+      margin-left: 50px;
+      color: #fff;
+    }

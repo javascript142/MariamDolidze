@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sign in </title>
+    <script src="https://kit.fontawesome.com/b2ba17e5a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/finalproect/style/sign.css">
+</head>
+<body>
+<main>
+    <div class="navigacion">
+        <a href="/finalproect/index.html">home</a>
+        <a href="/finalproect/aboutus.html">about us</a>
+        <a href="/finalproect/sign.html">Sign in</a>
+        <a href="/finalproect/signin.html">Sign Up</a>
+        <div class="burger-menu">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </label>
+            <ul class="menu-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="/finalproect/sign.html">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" id="nameField">
+
+                    </div>
+                    <div class="input-field" id="useremail"> 
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="useremail">
+
+                    </div>
+                    <div class="input-field" id="userpassword">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Password" id="userpassword" >
+
+                    </div>
+                    <p> Forgot password Click Here!</p>
+                </div>
+                <div class="btn-field">
+                    <button type="button"  id="signupBtn" onclick="handleRegistration()">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable" onclick="handleLogin()">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </main>
+    <footer>
+        <div class="container1">
+            <div class="container2">
+            <h1><img src="/finalproect/foto/unnamed.png"  width="100" height="100"></h1><br>
+            <p>Futuristic Technologies helps companies achieve sustainable growth through process and technology optimisation.We partner with our customers to establish robust business process platforms that enable rapid business innovation.</p>
+            
+            </div>
+            <div class="container3">
+              <h2>INDUSTRIES</h2><br>
+              <p>Communications</p><br>
+              <p>Energy and Utilities</p><br>
+              <p>Energy and Utilities</p>
+            </div>
+            <div class="container4">
+              <h2>contact</h2><br>
+              <p>hot line: 0 800 80 09 09</p><br>
+              <p>Tel: +995 32 243 69 99</p><br>
+              <p>e-mail: Futuristtecnologies@gmail.com</p>
+               
+            </div>
+            <div class="container5">
+              <h2>SERVICES</h2><br>
+              <p>SQL Server Database Support</p><br>
+              <p>Oracle Database Support</p><br>
+              <p>App Dev and Management</p><br>
+              <p>ERP/CRM</p><br>
+              <p>IT Strategy</p><br>
+              <p>Mobility</p>
+
+            </div>
+            </div>
+    </footer>
+
+
+    <script type="text/javascript" src="/finalproect/script/sign.js">
+
+    </script>
+</body>
+</html>
