@@ -1,22 +1,23 @@
-
-function handleRegistration() {
-    let nameField = document.getElementById('nameField').value;
-    let useremail = document.getElementById('useremail').value;
-    let userpassword = document.getElementById('userpassword').value;
-
-    let oldUsersData = localStorage.getItem('usersData');
-    oldUsersData = JSON.parse(oldUsersData);
-console.log(oldUsersData)
-    let user = {
-        nameField: nameField,
-        useremail: useremail,
-        userpassword: userpassword
-    };
-
+function handleRegistration(){
+    let userInf=
+    {
+       "username":document.getElementById("username").value,
+       "useremail":document.getElementById("useremail").value,
+       "userpassword":document.getElementById("userpassword").value, 
+    }
+     let oldUsersData = localStorage.getItem('userInf');
+     oldUsersData = JSON.parse(oldUsersData);
+    //  let user = {
+    //     username: username,
+    //     useremail: useremail,
+    //     userpassword: userpassword,
+    // }
     if (oldUsersData === null) {
-        localStorage.setItem('usersData', JSON.stringify([user]));
+        localStorage.setItem('ldUsersData', JSON.stringify([userInf]));
     } else {
-        oldUsersData.push(user);
-        localStorage.setItem('usersData', JSON.stringify(oldUsersData));
+        oldUsersData.push(userInf);
+        localStorage.setItem('userInf', JSON.stringify(oldUsersData));
     }
 }
+     
+

@@ -30,37 +30,23 @@
           </div>
       </div>
       </div>
+      
 
     <div class="container">
         <div class="form-box">
             <h1 id="title">Sign Up</h1>
             <form action="/finalproect/sign.html">
-                <div class="input-group">
-                    <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name" id="nameField">
-
-                    </div>
-                    <div class="input-field" id="useremail"> 
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email" id="useremail">
-
-                    </div>
-                    <div class="input-field" id="userpassword">
-                        <i class="fa-solid fa-key"></i>
-                        <input type="password" placeholder="Password" id="userpassword" >
-
-                    </div>
+                        <input type="text" placeholder="Name" id="username" required>
+                        <input type="email" placeholder="Email" id="useremail" required>
+                        <input type="password" placeholder="Password" id="userpassword" required>
                     <p> Forgot password Click Here!</p>
-                </div>
-                <div class="btn-field">
-                    <button type="button"  id="signupBtn" onclick="handleRegistration()">Sign up</button>
-                    <button type="button" id="signinBtn" class="disable" onclick="handleLogin()">Sign in</button>
-                </div>
+                    <button type="button" id="submit" onclick="handleRegistration()"> Sign up </button>
+                    <button type="button" id="submit1"> Sign in </button>
+    
             </form>
         </div>
-
     </div>
+    
     </main>
     <footer>
         <div class="container1">
@@ -94,6 +80,7 @@
             </div>
             </div>
     </footer>
+    
 
 
     <script type="text/javascript" src="/finalproect/script/sign.js">

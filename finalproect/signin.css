@@ -119,28 +119,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-.input-field{
-    background: #eaeaea;
-    margin: 15px ;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    max-height: 65px ;
-    transition: max-height 0.5s;
-    overflow:  hidden;
-    
-}
-input{
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 18px 15px;
-}
-.input-field i{
-    margin-left: 15px;
-    color: #999;
-}
+
 form p{
     text-align: left;
     font-size: 13px;
@@ -149,28 +128,97 @@ form p a{
     text-decoration: none;
     color: #3c00a0;
 }
+#username{
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px ;
+  transition: max-height 0.5s;
+  overflow:  hidden;
+}
+input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+#username i{
+  margin-left: 15px;
+  color: #999;
+}
+#useremail{
+background: #eaeaea;
+margin: 15px 0;
+border-radius: 3px;
+display: flex;
+align-items: center;
+max-height: 65px ;
+transition: max-height 0.5s;
+overflow:  hidden;
+}
+#userpassword{
+background: #eaeaea;
+margin: 15px 0;
+border-radius: 3px;
+display: flex;
+align-items: center;
+max-height: 65px ;
+transition: max-height 0.5s;
+overflow:  hidden;
+}
+
+form p{
+  text-align: left;
+  font-size: 13px;
+}
+form p a{
+  text-decoration: none;
+  color: #3c00a0;
+}
+#submit {
+flex-basis: 45% ;
+background: #3c00a0;
+color: #fff;
+height: 40px;
+width: 70px;
+border-radius:4px;
+border: 0;
+cursor: pointer;
+}
+#submit:hover{
+background-color: aqua;
+color: #000;
+}
+#submit1{
+margin-top: 20px;
+margin-left: 20px;
+flex-basis: 45% ;
+background: #3c00a0;
+color: #fff;
+height: 40px;
+width: 70px;
+border-radius:4px;
+border: 0;
+cursor: pointer;
+}
+#submit1:hover{
+background-color: aqua;
+color: #000;
+}
 .btn-field{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  flex-basis: 48% ;
+  background: #3c00a0;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
-.btn-field button{
-    flex-basis: 48% ;
-    background: #3c00a0;
-    color: #fff;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    cursor: pointer;
-}
-.input-group{
-    height: 180px ;
-}
-.btn-field button :hover{
-    background: #eaeaea;
-    color: #555;
-}
+
 .container1{
     position: relative;
     padding: 30px;
